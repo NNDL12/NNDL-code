@@ -68,35 +68,27 @@ class NeuralNetwork:
         else:
             raise ValueError(f"Loss function {self.loss_function} not supported.")
 
-    # Mean Squared Error (MSE)
     def mean_squared_error(self, y_true, y_pred):
         return np.mean((y_true - y_pred) ** 2)
 
-    # Cross-Entropy Loss (for classification)
     def cross_entropy_loss(self, y_true, y_pred):
-        # To avoid log(0), we add a small epsilon value
         epsilon = 1e-15
         y_pred = np.clip(y_pred, epsilon, 1 - epsilon)
         return -np.mean(np.sum(y_true * np.log(y_pred), axis=1))
 
 # Example usage:
-input_size = 3    # Number of input neurons
-hidden_size = 5   # Number of neurons in the hidden layer
-output_size = 2   # Number of output neurons
+input_size = 3
+hidden_size = 5
+output_size = 2
 
-# Create a neural network instance
 nn = NeuralNetwork(input_size, hidden_size, output_size, activation_function='sigmoid', loss_function='mse')
 
-# Example input data (for a batch of 2 samples with 3 features each)
 X_input = np.array([[0.1, 0.5, 0.9], [0.2, 0.8, 0.6]])
 
-# Actual target values (e.g., for regression, use continuous values)
 y_true = np.array([[0.5, 0.2], [0.7, 0.3]])
 
-# Perform a forward pass with the input data
 output = nn.forward(X_input)
 
-# Calculate the loss using the true values and the predicted output
 loss = nn.compute_loss(y_true, output)
 
 print("\nPredicted output:")
@@ -105,10 +97,9 @@ print("\nLoss (MSE):")
 print(loss)
 
 
-OUTPUT :
-           Predicted output:
-                     [[0.87654603 0.21322158]
-                     [0.79446709 0.24716415]]
+Predicted output:
+[[0.87654603 0.21322158]
+ [0.79446709 0.24716415]]
 
-                       Loss (MSE):
-                        0.03841934510105007
+Loss (MSE):
+0.03841934510105007
