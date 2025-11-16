@@ -31,3 +31,4 @@ face_cascade = cv2.CascadeClassifier(haarcascade_path)
 # Test the program with an example image
 image_path = "/content/sample_data/IMG-20240802-WA0134.jpg"  # Replace with the path to your image
 detect_faces(image_path)
+
