@@ -76,8 +76,7 @@ print("\nOutput of the neural network for the input data:")
 print(output)
 
 
-    Output: 
-          Output of the neural network for the input data:
-                           [[0.6854294  0.35951906]
-                           [0.70518654 0.37606834]]
+Output of the neural network for the input data:
+[[0.6854294  0.35951906]
+ [0.70518654 0.37606834]]
 
