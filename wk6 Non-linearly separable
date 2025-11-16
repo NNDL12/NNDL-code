@@ -56,7 +56,7 @@ print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
 # Save the model
 model.save("heart_disease_cnn_model.h5")
 
-OUTPUT:
+
     Epoch 
  - val_loss: 0.6508
     Epoch 10/20
@@ -64,21 +64,5 @@ OUTPUT:
  0.6939 - val_loss: 0.6536
  Epoch 1/20
                                               7/7 ━━━━━━━━━━━━━━━━━━━━ 2s 57ms/step - accuracy: 0.3981 - loss: 0.7163 - val_accuracy: 0.5306 - val_loss: 0.6952
- Epoch 2/20
-                                              7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.6080 - loss: 0.6850 - val_accuracy: 0.5918 - val_loss: 0.6914
-                                              Epoch 3/20
-                                               7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.5316 - loss: 0.6904 - val_accuracy: 0.6327 - val_loss: 0.6823
-                                              Epoch 4/20
-                                              7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.5459 - loss: 0.6858 - val_accuracy: 0.6531 - val_loss: 0.6750
-                                              Epoch 5/20
-                                              7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.6064 - loss: 0.6799 - val_accuracy: 0.6327 - val_loss: 0.6690
-                                               Epoch 6/20
-                                               7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 14ms/step - accuracy: 0.5923 - loss: 0.6736 - val_accuracy: 0.6531 - val_loss: 0.6631
-                                                Epoch 7/20
-                                                 7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 13ms/step - accuracy: 0.5802 - loss: 0.6710 - val_accuracy: 0.6327 - val_loss: 0.6576
-                                                  Epoch 8/20
-                                                  7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.6696 - loss:
- 0.6485 - val_accuracy: 0.6939 - val_loss: 0.6545
- Epoch 9/20
-                                      7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 15ms/step - accuracy: 0.6508 - loss: 0.6444 - val_accuracy: 0.6939                                                   
-  Epoch 11/20
+...
+     Test Accuracy: 59.02%
